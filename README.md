@@ -4,14 +4,14 @@
 Modern systems (websites, sensors, spacecraft, finance, etc.) generate continuous data streams.  
 Hidden inside these streams are **anomalies**: unusual spikes, drops, or patterns that could signal errors, attacks, or important events.
 
-Our goal: **detect anomalies in real-time** as data arrives, rather than after the fact.
+Goal: **detect anomalies in real-time** as data arrives, rather than after the fact.
 
-To get started quickly, we use the **Yahoo S5 dataset**, a well-known benchmark of time series with labeled anomalies (like sudden traffic spikes or dips).
+We use the **Yahoo S5 dataset**, a well-known benchmark of time series with labeled anomalies (like sudden traffic spikes or dips).
 
 ---
 
 ## 2. Solution
-We design a **simple, streaming anomaly detection pipeline**:
+Design: a **simple, streaming anomaly detection pipeline**:
 
 1. **Replay historical data as a stream** (Yahoo S5 CSVs → Kafka topic).
 2. **Detection logic** (e.g., rolling statistics, Median Absolute Deviation, Isolation Forest) runs on each new data point.
