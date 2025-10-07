@@ -1,4 +1,7 @@
 # Real-Time Anomaly Detection with Streaming Data (MVP)
+>     “The minimum viable product is that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort.”
+
+    ERIC RIES
 
 ## 1. Problem Statement
 Modern systems (websites, sensors, spacecraft, finance, etc.) generate continuous data streams.  
